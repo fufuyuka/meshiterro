@@ -1,12 +1,13 @@
 class PostImage < ApplicationRecord
-    
-  has_one_attached :image
+  
   belongs_to :user
   has_many :post_comments, dependent: :destroy
   has_many :favorites, dependent: :destroy
   
-  validates :posto_image, presence: true
-  validates :shop_mane, presence: true
+  has_one_attached :image
+  
+  validates :shop_name, presence: true
+  validates :caption, presence: true
   validates :image, presence: true
   
   def get_image
