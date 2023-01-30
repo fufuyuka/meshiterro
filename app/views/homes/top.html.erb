@@ -1,2 +1,7 @@
-<h1>Topページ</h1>
-<p>Find me in app/views/homes/top.html.erb</p>
+<div class="col-md-6 mx-auto mt-5">
+  <h1>Welcome to <strong>Meshiterro</strong>!!</h1>
+  <p>in<strong>Meshiterro</strong>,</p>
+  <p>SNS community that indiscrimintately stimulates the appetite of sensible citizens.</p>
+  <%= link_to "Log in",new_user_session_path, class:"btn btn-info" %>
+  <%= link_to "Sign up",new_user_registration_path, class:"btn btn-success" %>
+</div>
